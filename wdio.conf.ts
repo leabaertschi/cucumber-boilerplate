@@ -20,7 +20,7 @@ export const config: WebdriverIO.Config = {
     // directory is where your package.json resides, so `wdio` will be called from there.
     //
     specs: [
-        './src/features/**/*.feature',
+        './src/features/**/bug.feature',
     ],
     // Patterns to exclude.
     exclude: [
@@ -160,6 +160,7 @@ export const config: WebdriverIO.Config = {
             './src/steps/given.ts',
             './src/steps/then.ts',
             './src/steps/when.ts',
+            './src/steps/bug.ts',
             // Or search a (sub)folder for JS files with a wildcard
             // works since version 1.1 of the wdio-cucumber-framework
             // './src/**/*.js',
